@@ -12,3 +12,10 @@ $('#btn .btn-off').on('click', function(){
   $('#btn .btn-off').hide();
   $('#btn .btn-on').show();
 })
+$(function(){
+  $('#round').on('click', function(event){
+    $(this).addClass('active');
+    event.preventDefault();
+  })
+})
+

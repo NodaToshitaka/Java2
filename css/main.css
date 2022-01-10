@@ -35,10 +35,51 @@
   width: 26px;
   height: 26px;
   background-color: darkgrey;
+  border: 1px solid #000;
 }
 
 .btn-off{
   width: 26px;
   height: 26px;
   background-color: grey;
+  border: 1px solid #000;
 }
+
+.btn-on {
+  text-align: center;
+}
+.btn-off {
+  text-align: center;
+}
+
+.fa-arrow-up {
+  color: #fff;
+}
+
+#round {
+  display: inline-block;
+  margin: 50px;
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(#00b7ff, #0011ff);
+  position: relative;
+  border-radius: 50%;
+}
+
+.bar {
+  display: inline-block;
+  position: absolute;
+  left: 10%;
+  top: 40px;
+  width: 80%;
+  height: 20px;
+  border-radius: 4px;
+  background: linear-gradient(rgb(255, 255, 255), rgb(226, 225, 225))
+}
+
+.active{
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+  transition: all .4s;
+}
+

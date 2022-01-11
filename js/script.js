@@ -12,10 +12,26 @@ $('#btn .btn-off').on('click', function(){
   $('#btn .btn-off').hide();
   $('#btn .btn-on').show();
 })
+
+
 $(function(){
   $('#round').on('click', function(event){
-    $(this).addClass('active');
+    $(this).toggleClass('active');
     event.preventDefault();
   })
 })
+
+const popWin = document.getElementById('popWin');
+
+$(function(){
+  $('#round2').on('click', function(){
+    $(this).toggleClass('active');
+    popWin.style.display = 'flex';
+  })
+})
+
+const close = document.getElementById('close')
+close.addEventListener('click', () => {
+  popWin.style.display = 'none';
+});
 
